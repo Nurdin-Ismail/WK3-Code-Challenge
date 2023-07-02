@@ -1,33 +1,25 @@
 # WK3-Code-Challenge
 
 Introduction
-For this assessment, you'll be working on Flatdango.
+For this assessment, I'll be working on Flatdango.
 
-Flatiron Movie Theater is open for business! You will be building out an
+Moringa Movie Theater is open for business! I will be building out an
 application, Flatdango, that allows a user to purchase movie tickets from the
 theater.
 
-The instructions below will walk you through the process of ideation and planning your app: deciding on your user interface, planning how the information will be laid out on the page, etc. You should work through all the planning steps before you start doing any coding.
+The instructions below will walk you through the process of ideation and planning of my app: deciding on my user interface, planning how the information will be laid out on the page, etc.
 
 Requirements
-For this project, you must:
+For this project, I will :
 
-Have a well-written README file.
+
 Fetch data from a local server running JSON DB server.
-Pre-requisite Data
+And create an web app out of the data provided
 
 
  
 
-Project Setup
-Once you have the plan in place for the application you want to build take the following steps:
 
-Create a new project folder.
-Create a new GitHub repository (NB: ENSURE IT IS PUBLIC)
-Add your TM as a contributor to the project. (This is only for grading purposes. We promise we won't steal your code)
-Please make sure you regularly commit to the repository.
-Project Guidelines
-Your project should conform to the following set of guidelines:
 
 Core Deliverables
 As a user, I can:
@@ -35,10 +27,10 @@ As a user, I can:
 1. See the first movie's details, including its **poster, title, runtime,
    showtime, and available tickets** when the page loads. The number of
    available tickets will need to be derived by subtracting the number of
-   `tickets_sold` from the theater's `capacity`. You will need to make a GET
+   `tickets_sold` from the theater's `capacity`. I will need to make a GET
    request to the following endpoint to retrieve the film data:
 
-   
+   ```txt
    GET /films/1
 
    Example Response:
@@ -52,14 +44,14 @@ As a user, I can:
      "description": "A giant lizard terrorizes a rural Texas community and a heroic teenager attempts to destroy the creature.",
      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
    }
+   ```
  
 2. See a menu of all movies on the left side of the page in the `ul#films`
    element when the page loads. (_optional_: you can style each film in the list
    by adding the classes `film item` to each `li` element.) There is a
    placeholder `li` in the `ul#films` element that is hardcoded in the HTML —
    feel free to remove that element by editing the HTML file directly, or use
-   JavaScript to remove the placeholder element before populating the list. You
-   will need to make a GET request to the following endpoint to retrieve the
+   JavaScript to remove the placeholder element before populating the list. I'll need to make a GET request to the following endpoint to retrieve the
    film data:
 
    ```txt
@@ -96,9 +88,10 @@ As a user, I can:
    available). **No persistence is needed for this feature**.
 
 Bonus Deliverables
-These bonus deliverables are here if you want an extra challenge and won't
-affect your score. **Make sure to commit your work to save your progress before
-attempting the bonus deliverables!**
+These bonus deliverables are here to provide an extra challenge.
+
+
+
 
 1. Click on a movie in the menu to replace the currently displayed movie's
    details with the new movie's details. Note that you may have to make an
@@ -117,10 +110,7 @@ attempting the bonus deliverables!**
    ```
 Extra Bonus
 These extra bonus deliverables involve using `fetch` to update data on the
-`json-server` backend by using `POST`, `PATCH`, and `DELETE` requests. These are
-meant for an extra, extra challenge and won't affect your grade. **Make sure to
-commit your work to save your progress before attempting the extra bonus
-deliverables!**
+`json-server` backend by using `POST`, `PATCH`, and `DELETE` requests. 
 
 1. When a ticket is purchased, persist the updated number of `tickets_sold` on
    the server. Remember, the frontend shows the number of available tickets
