@@ -15,9 +15,7 @@ For this project, you must:
 Have a well-written README file.
 Fetch data from a local server running JSON DB server.
 Pre-requisite Data
-You can use this JSON file for your server DB.
 
-db.json Download db.json 
 
  
 
@@ -64,7 +62,7 @@ As a user, I can:
    will need to make a GET request to the following endpoint to retrieve the
    film data:
 
-
+   ```txt
    GET /films
 
    Example response:
@@ -90,6 +88,7 @@ As a user, I can:
         "poster": "https://www.gstatic.com/tv/thumb/v22vodart/47781/p47781_v_v8_ac.jpg"
       }
    ]
+   ```
 
 3. Buy a ticket for a movie. After clicking the "Buy Ticket" button, I should
    see the number of available tickets decreasing on the frontend. I should not
